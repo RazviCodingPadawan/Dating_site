@@ -15,7 +15,10 @@ body {
 
 header {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     height: 100vh;
 }
 
@@ -23,8 +26,15 @@ header {
 .header_users {
     display: flex;
     flex-direction: column;
-    width:80%;
+    width: 60%;
     height: 300px;
+    margin-bottom: 170px;
+}
+
+.header_h2 {
+    display: flex;
+    justify-content: center;
+    color: #fff;
 }
 
 .active_users {
@@ -32,14 +42,52 @@ header {
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
-    padding-right: 55px;
-    padding-top: 35px;
+}
+
+.menu {
+    display: flex;
+    justify-content: right;
+}
+
+.nav_menu {
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 
-img {
+.logo {
     display: flex;
-    width: 90%;
+    position: absolute;
+    left: -20px;
+    top: -50px;
+    width: 20%;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    margin-left: 700px;
+}
+
+li {
+    padding: 0 15px;
+    list-style: none;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+a:hover {
+    color: #f1669d;
+}
+
+span {
+    color:#f1669d;
 }
 
 .user {
@@ -73,7 +121,7 @@ h1 {
 }
 
 .container {
-    background-color: #f1669d;
+    background-color: #fff;
     width: 100%;
     height: 100vh;
 }
@@ -85,15 +133,15 @@ h1 {
     margin-top: 5%;
 }
 
-h2 {
-    color: #fff;
+.container_h2 {
+    color: #6355a3;
     font-size: 3rem;
     padding-top: 7%;
 }
 
 .container_text {
     word-spacing: 11px;
-    color: #efeef5;
+    color: #6355a3;
     width: 40%;
 }
 
@@ -126,22 +174,22 @@ footer a:hover {
     font-size: 2.5rem;
 }
 
-button {
-    padding: 15px 15px;
+.add_btn {
+    padding: 10px 10px;
     border-radius: 10px;
     border: #f1669d 1px solid;
     margin: 25px;
     background-color: #F3438A;
 }
 
-button a {
+.add_a {
+    font-size: 12px;
     padding: 15px 20px;
     text-decoration: none;
     color: #fff;
-    font-weight: 400;
 }
 
-button a:hover {
+.add_a:hover {
     color: #6355a3;
 }
 
