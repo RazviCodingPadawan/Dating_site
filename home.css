@@ -15,14 +15,48 @@ body {
 
 header {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
     height: 100vh;
 }
 
+
+.header_users {
+    display: flex;
+    flex-direction: column;
+    width:80%;
+    height: 300px;
+}
+
+.active_users {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-right: 55px;
+    padding-top: 35px;
+}
+
+
 img {
     display: flex;
-    width: 30%;
+    width: 90%;
+}
+
+.user {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    background-color: #efeef5;
+    border-radius: 12px;
+}
+
+.user:hover {
+    opacity: 0.7;
+}
+
+.avatar_img {
+    display: flex;
+    width: 120px;
 }
 
 h1 {
@@ -63,6 +97,18 @@ h2 {
     width: 40%;
 }
 
+.dating_img {
+    width: 40%;
+}
+
+h3 {
+    color:#366abb;
+}
+
+h4 {
+    color: #F3438A;
+}
+
 footer {
     position: absolute;
     bottom: 0;
@@ -82,17 +128,17 @@ footer a:hover {
 
 button {
     padding: 15px 15px;
-    border-radius: 20px;
+    border-radius: 10px;
     border: #f1669d 1px solid;
     margin: 25px;
-    background-color: #f1669d;
+    background-color: #F3438A;
 }
 
 button a {
     padding: 15px 20px;
     text-decoration: none;
     color: #fff;
-    font-weight: 700;
+    font-weight: 400;
 }
 
 button a:hover {
