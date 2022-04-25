@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="matchmaking.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a31783f23c.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="app">
@@ -13,8 +14,8 @@
         <h1>{{firstName}} {{lastName}}</h1>
         <h3>Email: {{email}}</h3>
         <div class="buttons">
-            <button style="background-color: green;" v-on:click="getUser()" :class="gender">Like</button>
-            <button style="background-color: red;" v-on:click="getUser()" :class="gender">DisLike </button>
+            <button style="background-color: green;" v-on:click="getUser()" :class="gender">Like <i class="fa-solid fa-thumbs-up"></i></button>
+            <button style="background-color: red;" v-on:click="getUser()" :class="gender">DisLike <i class="fa-solid fa-thumbs-down"></i></button>
         </div>
     </div>
     
