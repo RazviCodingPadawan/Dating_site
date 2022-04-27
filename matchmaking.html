@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="matchmaking.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a31783f23c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="app">
+        <img :class="gender" v-bind:src="picture" v-bind:alt="firstName"/>
+        <h1>{{firstName}} {{lastName}}</h1>
+        <h3>Email: {{email}}</h3>
+        <div class="buttons">
+            <button style="background-color: green;" v-on:click="getUser()" :class="gender">Like <i class="fa-solid fa-thumbs-up"></i></button>
+            <button style="background-color: red;" v-on:click="getUser()" :class="gender">DisLike <i class="fa-solid fa-thumbs-down"></i></button>
+        </div>
+    </div>
+    
+
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="app.js"></script>
+</body>
+</html>
