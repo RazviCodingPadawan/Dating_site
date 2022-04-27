@@ -9,13 +9,20 @@
     <script src="https://kit.fontawesome.com/a31783f23c.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <header>
+        <div class="menu">
+            <ul class="menu_list">
+                <li><a href="home.html">Hem</a></li>
+            </ul>
+        </div>
+    </header>
     <div id="app">
         <img :class="gender" v-bind:src="picture" v-bind:alt="firstName"/>
         <h1>{{firstName}} {{lastName}}</h1>
         <h3>Email: {{email}}</h3>
         <div class="buttons">
-            <button style="background-color: green;" v-on:click="getUser()" :class="gender">Like <i class="fa-solid fa-thumbs-up"></i></button>
-            <button style="background-color: red;" v-on:click="getUser()" :class="gender">DisLike <i class="fa-solid fa-thumbs-down"></i></button>
+            <button style="background-color: #366AC1;" v-on:click="getUser()" :class="gender">Like <i class="fa-solid fa-thumbs-up"></i></button>
+            <button style="background-color: #F84E95;" v-on:click="getUser()" :class="gender">DisLike <i class="fa-solid fa-thumbs-down"></i></button>
         </div>
     </div>
     

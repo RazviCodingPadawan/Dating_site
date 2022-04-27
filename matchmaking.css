@@ -10,7 +10,7 @@ body {
 }
 
 #app {
-    width: 400px;
+    width: 600px;
     height: 100vh;
     margin: auto;
     text-align: center;
@@ -20,16 +20,18 @@ body {
     align-items: center;
 }
 
-h1,
+h1, 
 h3 {
     margin-bottom: 1rem;
     font-weight: normal;
+    color: #366abb;
 }
 
 img {
-    border-radius: 50%;
-    border: 5px #333 solid;
+    border-radius: 5px;
+    border: 2px solid;
     margin-bottom: 1rem;
+    width: 30%;
 }
 
 .male {
@@ -50,6 +52,49 @@ button {
     font-size: 18px;
     border: none;
     padding: 10px 10px;
-    margin: 10px;
+    margin: 40px 10px 10px 10px;
     border-radius: 10px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu {
+    display: flex;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    width: 100%;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+}
+
+li {
+    padding: 0 15px;
+    list-style: none;
+}
+
+a {
+    color: #F84E95;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+a:hover {
+    color: #f4a7c6;
+}
+
+span {
+    font-weight: 700;
+    color: #F84E95;
+}
+
+span:hover {
+    color: #f4a7c6;
 }
