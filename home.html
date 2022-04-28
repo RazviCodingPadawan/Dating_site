@@ -70,6 +70,57 @@
                     <h3>Annika</h3>
                     <h4>Age: 30 år </h4>
                 </div>
+            </div>
+                
+                <!-- SLIDESHOW -->
+                <div class="slideshow-container">
+
+                    <h2 class="random_user_h2">RANDOM AVATAR</h2>
+            
+                    <div class="mySlides fade">
+                        <div class="user">
+                            <img class="avatar_img" src="avatars/Avatar Users2_22.png" >
+                            <h3>Lisa</h3>
+                            <h4>Age: 19 år </h4>
+                        </div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                        <div class="user">
+                            <img class="avatar_img" src="avatars/Avatar Users2_19.png" >
+                            <h3>John</h3>
+                            <h4>Age: 28 år </h4>
+                        </div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                        <div class="user">
+                            <img class="avatar_img" src="avatars/Avatar Users2_46.png" >
+                            <h3>Sara</h3>
+                            <h4>Age: 27 år </h4>
+                        </div>
+                    </div>
+            
+                    <div class="mySlides fade">
+                        <div class="user">
+                            <img class="avatar_img" src="avatars/Avatar Users2_36.png" >
+                            <h3>Peter</h3>
+                            <h4>Age: 23 år </h4>
+                        </div>
+                    </div>
+                    
+                    </div>
+                    <br>
+            
+                    <div style="text-align:center">
+                      <span class="dot"></span> 
+                      <span class="dot"></span> 
+                      <span class="dot"></span> 
+                      <span class="dot"></span> 
+                    </div>
+                </div>
+
+                <!-- BUTTONS -->
  
             <div class="header_buttons">
                 <button class="add_btn_new"><a class="add_a" href="login.html">LOGGA IN</a></button>
@@ -98,50 +149,51 @@
         </div>
     </div>
 
-    <div class="slideshow-container">
+    <!-- MEDLEMSKAP -->
 
-        <h2 class="random_user_h2">RANDOM AVATAR</h2>
-
-        <div class="mySlides fade">
-            <div class="user">
-                <img class="avatar_img" src="avatars/Avatar Users2_22.png" >
-                <h3>Lisa</h3>
-                <h4>Age: 19 år </h4>
+    <div id="medlemskap">
+        <h2 class="medlemskap_h2">MEDLEMSKAP</h2>
+        <div class="medlemskap_content">
+            <div class="medlem_price">
+                <h3 class="medlem_text">FREE</h3>
+                <h2 class="medlem_price_kr">0,00 kr</h2>
+            </div>
+            <div class="medlem_price">
+                <h3 class="medlem_text">STANDART</h3>
+                <h2 class="medlem_price_kr">120,00 kr/månader</h2>
+            </div>
+            <div class="medlem_price">
+                <h3 class="medlem_text">PREMIUM</h3>
+                <h2 class="medlem_price_kr">300,00 kr/månader</h2>
             </div>
         </div>
-        
-        <div class="mySlides fade">
-            <div class="user">
-                <img class="avatar_img" src="avatars/Avatar Users2_19.png" >
-                <h3>John</h3>
-                <h4>Age: 28 år </h4>
-            </div>
-        </div>
-        
-        <div class="mySlides fade">
-            <div class="user">
-                <img class="avatar_img" src="avatars/Avatar Users2_46.png" >
-                <h3>Sara</h3>
-                <h4>Age: 27 år </h4>
-            </div>
-        </div>
+    </div>
 
-        <div class="mySlides fade">
-            <div class="user">
-                <img class="avatar_img" src="avatars/Avatar Users2_36.png" >
-                <h3>Peter</h3>
-                <h4>Age: 23 år </h4>
-            </div>
-        </div>
-        
-        </div>
-        <br>
+    <!-- MAP -->
 
-        <div style="text-align:center">
-          <span class="dot"></span> 
-          <span class="dot"></span> 
-          <span class="dot"></span> 
-          <span class="dot"></span> 
+    <div id="map">
+        <h2 class="map_h2">KONTAKTER</h2>
+        <div class="contactform">
+            <div class="map_form">
+                    <form action="/action_page.php">
+                        <label for="fname">Namn</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Ditt namn">
+                        <label for="lname">Efternamn</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Ditt efternamn">
+                        <label for="country">Land</label>
+                        <select id="country" name="country">
+                            <option value="sverige">Sverige</option>
+                            <option value="norge">Norge</option>
+                            <option value="andra">andra</option>
+                        </select>
+                        <label for="subject">Meddelande</label>
+                        <textarea id="subject" name="subject" placeholder="Skriv text..." style="height:120px"></textarea>
+                        <input type="submit" value="Skicka in">
+                    </form>
+            </div>
+            <div class="google-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8122.6168239533135!2d17.948973!3d59.4054815!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf29c835228dcf386!2sJENSEN%20yrkesh%C3%B6gskola%20Stockholm!5e0!3m2!1sru!2sse!4v1651172964131!5m2!1sru!2sse" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </div>
     </div>
         
