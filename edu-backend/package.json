@@ -1,0 +1,39 @@
+{
+  "name": "edu-backend",
+  "version": "1.0.0",
+  "description": "Simple backend server.",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest  --group=-component --group=-integration",
+    "dev": "nodemon server.js",
+    "componenttest": "jest  --group=component",
+    "integrationtest": "jest  --group=integration"
+  },
+  "jest": {
+    "runner": "groups"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EiJey11/Backend-edu.git"
+  },
+  "author": "Artur J",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EiJey11/Backend-edu.git"
+  },
+  "homepage": "https://github.com/EiJey11/Backend-edu/blob/main/README.md",
+  "keywords": [],
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.1",
+    "healthcheck": "^0.1.3",
+    "jsonwebtoken": "^8.5.1",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "jest": "^29.1.2",
+    "jest-runner-groups": "^2.2.0",
+    "nodemon": "^2.0.20"
+  }
+}
